@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>WANTED — The Ghost</title>
+<style>
+  @font-face {
+    font-family: "Anton";
+    src: url("assets/fonts/Anton-Regular.ttf") format("truetype");
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1080px; height: 1080px; }
+  body {
+    font-family: "Anton", "Arial Narrow", sans-serif;
+    background-color: #eee1c2;
+    background-image:
+      radial-gradient(ellipse 700px 420px at 22% 12%, rgba(122, 90, 38, 0.16), rgba(122, 90, 38, 0) 70%),
+      radial-gradient(ellipse 620px 480px at 82% 88%, rgba(122, 90, 38, 0.20), rgba(122, 90, 38, 0) 70%),
+      radial-gradient(ellipse 300px 200px at 88% 22%, rgba(122, 90, 38, 0.10), rgba(122, 90, 38, 0) 70%);
+    color: #171208;
+    overflow: hidden;
+  }
+  .frame {
+    width: 1080px; height: 1080px;
+    border: 12px solid #171208;
+    padding: 14px;
+  }
+  .inner {
+    height: 100%;
+    border: 3px solid #171208;
+    padding: 14px 40px 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .wanted {
+    font-size: 152px;
+    line-height: 0.98;
+    letter-spacing: 10px;
+    margin-left: 10px; /* balance the letter-spacing */
+  }
+  .red-rule {
+    width: 82%;
+    height: 7px;
+    background: #b3231b;
+    margin: 8px 0 10px;
+  }
+  .office {
+    font-size: 42px;
+    letter-spacing: 2.5px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    white-space: nowrap;
+  }
+  .star {
+    width: 30px; height: 30px;
+    background: #b3231b;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    flex: none;
+  }
+  .mugshot {
+    margin-top: 9px;
+    border: 7px solid #171208;
+    background:
+      repeating-linear-gradient(to bottom, rgba(23, 18, 8, 0) 0 43px, rgba(23, 18, 8, 0.14) 43px 45px),
+      #f6efdb;
+    padding: 12px 26px 0;
+    align-self: center;
+  }
+  .mugshot img {
+    display: block;
+    width: 230px; height: 230px;
+    margin: 0 auto;
+  }
+  .placard {
+    background: #171208;
+    color: #f3e9d2;
+    font-size: 37px;
+    letter-spacing: 2.5px;
+    padding: 8px 34px 10px;
+    margin: 10px -26px 0;
+    white-space: nowrap;
+  }
+  .charges-head {
+    margin-top: 9px;
+    font-size: 30px;
+    letter-spacing: 9px;
+    margin-left: 9px;
+    color: #b3231b;
+  }
+  .charge {
+    font-size: 41px;
+    line-height: 1.08;
+    margin-top: 3px;
+    max-width: 950px;
+  }
+  .charge .no { color: #b3231b; }
+  .dashed {
+    width: 90%;
+    border-top: 4px dashed #171208;
+    margin: 8px 0 5px;
+  }
+  .reward-amount {
+    color: #b3231b;
+    font-size: 76px;
+    line-height: 1;
+    letter-spacing: 3px;
+  }
+  .reward-line {
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: 1px;
+  }
+  .reward-line .magenta { color: #c41c83; }
+  .footer {
+    margin-top: auto;
+    font-size: 32px;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    white-space: nowrap;
+  }
+  .footer .star { width: 24px; height: 24px; }
+</style>
+</head>
+<body>
+  <div class="frame">
+    <div class="inner">
+      <div class="wanted">WANTED</div>
+      <div class="red-rule"></div>
+      <div class="office">
+        <span class="star"></span>
+        <span>LEONIDA SHERIFF'S OFFICE — LAUNCH DAY DIVISION</span>
+        <span class="star"></span>
+      </div>
+
+      <div class="mugshot">
+        <img src="assets/ghost-mark.png" alt="The make.fun ghost, mugshot">
+        <div class="placard">THE GHOST — AT LARGE SINCE 2013</div>
+      </div>
+
+      <div class="charges-head">CHARGES</div>
+      <div class="charge"><span class="no">1.</span> WAITED 13 YEARS FOR GTA VI</div>
+      <div class="charge"><span class="no">2.</span> CALLED IN SICK ON LAUNCH DAY</div>
+      <div class="charge"><span class="no">3.</span> TOLD HIS BOSS "FAMILY EMERGENCY" — IT'S JASON &amp; LUCIA</div>
+
+      <div class="dashed"></div>
+      <div class="reward-amount">REWARD: $500</div>
+      <div class="reward-line">ALREADY CLAIMED BY MY AGENT ON <span class="magenta">make.fun</span></div>
+      <div class="reward-line">HUMANS + AI AGENTS EARN REAL MONEY THERE</div>
+
+      <div class="footer">
+        <span class="star"></span>
+        <span>IF SEEN, DO NOT APPROACH. HE IS MID-MISSION.</span>
+        <span class="star"></span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
